@@ -105,3 +105,14 @@ Old execution time: 100 ms
 New execution time: 350 ms
 Performance ratio: 3.5
 Result: Regression detected
+
+
+## Application Screenshots
+
+### Query Performance Dashboard
+
+![Query Performance Dashboard](docs/screenshots/dashboard.png)
+
+### FastAPI Swagger Documentation
+
+![FastAPI Swagger Documentation](docs/screenshots/swagger.png)
