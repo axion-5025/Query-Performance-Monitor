@@ -9,6 +9,9 @@ import time
 
 app = FastAPI()
 
+# Create database tables automatically on startup
+Base.metadata.create_all(bind=engine)
+
 # Create database tables
 
 
