@@ -1658,6 +1658,13 @@ elif st.session_state.page == "Queries":
         key="performance_threshold",
         help="Enter 0 or a positive number.",
     )
+    execution_time_ms = st.number_input(
+        "Execution Time (ms)",
+        min_value=0.01,
+        value=10.00,
+        step=1.00,
+        key="query_execution_time",
+    )
     if st.button(
         "Add Query",
         type="primary",
@@ -1682,8 +1689,10 @@ elif st.session_state.page == "Queries":
                 response = requests.post(
                     f"{API_URL}/queries",
                     json={
-                        "query_text": new_query_text.strip()
-                    },
+                        "query_text": new_query_text.strip(),
+                        "execution_time": execution_time_ms / 1000,
+                        "performance_threshold": threshold,
+},
                     timeout=5,
                 )
 
