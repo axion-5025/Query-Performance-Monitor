@@ -116,3 +116,15 @@ Result: Regression detected
 ### FastAPI Swagger Documentation
 
 ![FastAPI Swagger Documentation](docs/screenshots/swagger.png)
+
+
+## Test Reports
+
+- [Basic Query Validation](docs/reports/basic-query-validation.pdf)
+- [Performance Regression Detection](docs/reports/performance-regression-detection.pdf)
+- [Execution Plan Comparison](docs/reports/execution-plan-comparison.pdf)
+- [Regression Root Cause Analysis](docs/reports/regression-root-cause-analysis.pdf)
+- [Index Analysis](docs/reports/index-analysis.pdf)
+- [Index Recommendation](docs/reports/index-recommendation.pdf)
+- [Optimization Validation](docs/reports/optimization-validation.pdf)
+- [Edge Case Validation](docs/reports/edge-case-validation.pdf)
